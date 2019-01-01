@@ -53,7 +53,7 @@ namespace Accounts
             frozenStatus = false;
         }
 
-        protected bool statusHandler(double x) {
+        virtual protected bool statusHandler(double x) {
             if (x > (0.5 * Balance) || x > 2500) {//Currently all transations on an empty account freeze said account
                 frozenStatus = true;
             }
