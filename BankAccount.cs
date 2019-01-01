@@ -60,7 +60,9 @@ namespace Accounts
             return frozenStatus;
         }
 
-        //overload <<
+        override public String ToString() {
+            return "$" + Balance;
+        }
 
     }
 }
